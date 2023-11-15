@@ -11,5 +11,6 @@ network: Network.ETHEREUM
 const metamaskAccount = await tatum.walletProvider.use(MetaMask).getWallet();
 setAccount(metamaskAccount);
 };
+console.log(account);
 return { connectMetaMask, account };
 }
