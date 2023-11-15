@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import ThemeSwitch from '@/components/ThemeSwitch'
+import MetaMaskTatumButton from '@/components/MetaMaskTatumButton'
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
         <div className="flex flex-row gap-5">
 
           {/* Bouton pour se connecter au wallet metamask */}
-          <button className="">
+          {/* <button className="">
             <svg width="30" height="173" viewBox="0 0 186 173" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M175.973 1L103.893 54.4755L117.28 22.9262L175.973 1Z" fill="#E17726" stroke="#E17726" stroke-width="0.712817" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M9.7439 1L81.1681 54.9816L68.4372 22.9262L9.7439 1Z" fill="#E27625" stroke="#E27625" stroke-width="0.712817" stroke-linecap="round" stroke-linejoin="round"/>
@@ -52,8 +53,9 @@ export default function Home() {
                 <path d="M52.5842 75.3183L14.7407 86.3955L2.14526 125.615H35.7261L58.2297 125.907L41.1506 92.6183L52.5842 75.3183Z" fill="#F5841F" stroke="#F5841F" stroke-width="0.712817" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M103.893 94.4289L106.352 52.6721L117.279 22.9263H68.4373L79.3647 52.6721L81.824 94.4289L82.7649 107.595L82.8361 140.014H102.881L102.952 107.595L103.893 94.4289Z" fill="#F5841F" stroke="#F5841F" stroke-width="0.712817" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-          </button>
+          </button> */}
 
+          <MetaMaskTatumButton/>
           <ThemeSwitch />
         </div>
       </div>
