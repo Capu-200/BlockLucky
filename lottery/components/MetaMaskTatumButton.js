@@ -12,7 +12,7 @@ return (
 ) : (
 <button onClick={connectMetaMask}>Connect MetaMask</button>
 )} */}
-<button onClick={connectMetaMask}>
+<button onClick={connectMetaMask}> 
     <svg width="30" height="173" viewBox="0 0 186 173" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M175.973 1L103.893 54.4755L117.28 22.9262L175.973 1Z" fill="#E17726" stroke="#E17726" stroke-width="0.712817" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M9.7439 1L81.1681 54.9816L68.4372 22.9262L9.7439 1Z" fill="#E27625" stroke="#E27625" stroke-width="0.712817" stroke-linecap="round" stroke-linejoin="round"/>
