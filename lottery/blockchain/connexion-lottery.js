@@ -1,3 +1,4 @@
+import Web3 from 'web3'
 
 const lotteryAbi = [
 	{
@@ -143,12 +144,10 @@ const lotteryAbi = [
 	}
 ]
 
-
-const lotteryContract = web3 => {
-    return new web3.eth.Contract(
+let web3 = new Web3(window.ethereum)
+const lotteryContract = new web3.eth.Contract(
         lotteryAbi,
         "0x144beF9716A79Bed8149208D518e95719D85bbE6"
     )
-}
-
-export default lotteryContract
+console.log("Contract :", lotteryContract)
+export default {lotteryContract, web3}
